@@ -1,0 +1,5 @@
+1.) create database excellence_tech;
+
+2.) create table users (id int Auto_increment primary key,  username varchar(20) UNIQUE KEY, password varchar(75));
+
+3.) create table users_address (id int, street varchar(30), pincode int(6), country varchar(30), state varchar(30), phone_no varchar(15), foreign key (id) references `excellence_tech`.`users`(`id`));
